@@ -1,0 +1,829 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{527F0726-4C92-4D15-9A0D-1DE86F338879}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>COLM_Inventory.My.MyApplication</StartupObject>
+    <RootNamespace>COLM_Inventory</RootNamespace>
+    <AssemblyName>COLM Inventory</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>COLM Inventory.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>COLM Inventory.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Dummy\Dummy3.Designer.vb">
+      <DependentUpon>Dummy3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dummy\Dummy3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dummy\Dummy4.Designer.vb">
+      <DependentUpon>Dummy4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dummy\Dummy4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Activity Log\ActivityLogDetails.vb" />
+    <Compile Include="Form\Home\Permission\frmDeletePermission.Designer.vb">
+      <DependentUpon>frmDeletePermission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Permission\frmDeletePermission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Permission\frmEditPermission.Designer.vb">
+      <DependentUpon>frmEditPermission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Permission\frmEditPermission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Permission\frmSelectPermission.Designer.vb">
+      <DependentUpon>frmSelectPermission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Permission\frmSelectPermission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Permission\ctrlPermission.Designer.vb">
+      <DependentUpon>ctrlPermission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Permission\ctrlPermission.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Permission\ctrlPermissionCard.Designer.vb">
+      <DependentUpon>ctrlPermissionCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Permission\ctrlPermissionCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Permission\frmAddPermission.Designer.vb">
+      <DependentUpon>frmAddPermission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Permission\frmAddPermission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Activity Log\ctrlActivityLog.Designer.vb">
+      <DependentUpon>ctrlActivityLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Activity Log\ctrlActivityLog.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Activity Log\ctrlActivityLogCard.Designer.vb">
+      <DependentUpon>ctrlActivityLogCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Activity Log\ctrlActivityLogCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\User\frmEditUser.Designer.vb">
+      <DependentUpon>frmEditUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\User\frmEditUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\User\frmAddUser.Designer.vb">
+      <DependentUpon>frmAddUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\User\frmAddUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Customer\Offense\CustomerOffenseDetails.vb" />
+    <Compile Include="Form\Home\Permission\PermissionDetails.vb" />
+    <Compile Include="Form\Home\User\ctrlUserCard.Designer.vb">
+      <DependentUpon>ctrlUserCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\User\ctrlUserCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\User\ctrlUser.Designer.vb">
+      <DependentUpon>ctrlUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\User\ctrlUser.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Customer\ctrlCustomer.Designer.vb">
+      <DependentUpon>ctrlCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Customer\ctrlCustomer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Customer\ctrlCustomerCard.Designer.vb">
+      <DependentUpon>ctrlCustomerCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Customer\ctrlCustomerCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Customer\Offense\frmEditCustomerOffense.Designer.vb">
+      <DependentUpon>frmEditCustomerOffense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Customer\Offense\frmEditCustomerOffense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Customer\Offense\frmAddCustomerOffense.Designer.vb">
+      <DependentUpon>frmAddCustomerOffense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Customer\Offense\frmAddCustomerOffense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Customer\frmEditCustomer.Designer.vb">
+      <DependentUpon>frmEditCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Customer\frmEditCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Customer\frmAddCustomer.Designer.vb">
+      <DependentUpon>frmAddCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Customer\frmAddCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Customer\frmDeleteCustomer.Designer.vb">
+      <DependentUpon>frmDeleteCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Customer\frmDeleteCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Customer\Offense\frmViewCustomer.Designer.vb">
+      <DependentUpon>frmViewCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Customer\Offense\frmViewCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Reservation\frmDeleteReservation.Designer.vb">
+      <DependentUpon>frmDeleteReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Reservation\frmDeleteReservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Reservation\frmEditReservation.designer.vb">
+      <DependentUpon>frmEditReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Reservation\frmEditReservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Reservation\frmAddReservation.designer.vb">
+      <DependentUpon>frmAddReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Reservation\frmAddReservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Reservation\ctrlReservation.Designer.vb">
+      <DependentUpon>ctrlReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Reservation\ctrlReservation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Station\frmEditStation.Designer.vb">
+      <DependentUpon>frmEditStation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Station\frmEditStation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Station\ctrlStation.Designer.vb">
+      <DependentUpon>ctrlStation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Station\ctrlStation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Borrow\ctrlBorrow.Designer.vb">
+      <DependentUpon>ctrlBorrow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Borrow\ctrlBorrow.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Borrow\frmEditBorrow.Designer.vb">
+      <DependentUpon>frmEditBorrow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Borrow\frmEditBorrow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Station\StationDetails.vb" />
+    <Compile Include="Form\Home\Borrow\BorrowDetails.vb" />
+    <Compile Include="Form\Home\Consume\ConsumeDetails.vb" />
+    <Compile Include="Form\Home\Customer\CustomerDetails.vb" />
+    <Compile Include="Form\Home\Consume\frmEditConsume.Designer.vb">
+      <DependentUpon>frmEditConsume.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Consume\frmEditConsume.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Customer\frmSelectCustomer.Designer.vb">
+      <DependentUpon>frmSelectCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Customer\frmSelectCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Inventory\frmSelectInventory.Designer.vb">
+      <DependentUpon>frmSelectInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Inventory\frmSelectInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Consume\ctrlConsume.Designer.vb">
+      <DependentUpon>ctrlConsume.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Consume\ctrlConsume.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Inventory\frmUseInventory.designer.vb">
+      <DependentUpon>frmUseInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Inventory\frmUseInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Reservation\ReservationDetails.vb" />
+    <Compile Include="Form\Home\User\UserDetails.vb" />
+    <Compile Include="Form\Home\User\frmEditPassword.Designer.vb">
+      <DependentUpon>frmEditPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\User\frmEditPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module, Class, Structure\Bezier.vb" />
+    <Compile Include="UserControl\ctrlSwitch.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserForm\Notification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dummy\Dummy1.Designer.vb">
+      <DependentUpon>Dummy1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dummy\Dummy1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dummy\Dummy2.Designer.vb">
+      <DependentUpon>Dummy2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dummy\Dummy2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Inventory\InventoryDetails.vb" />
+    <Compile Include="Form\Home\Inventory\ctrlInventory.Designer.vb">
+      <DependentUpon>ctrlInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Inventory\ctrlInventory.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Inventory\frmDeleteInventory.Designer.vb">
+      <DependentUpon>frmDeleteInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Inventory\frmDeleteInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Inventory\frmEditInventory.Designer.vb">
+      <DependentUpon>frmEditInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Inventory\frmEditInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Inventory\frmAddInventory.Designer.vb">
+      <DependentUpon>frmAddInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Inventory\frmAddInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Item\ItemDetails.vb" />
+    <Compile Include="Form\Login\frmConfirmPassword.Designer.vb">
+      <DependentUpon>frmConfirmPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Login\frmConfirmPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Item\frmDeleteItem.Designer.vb">
+      <DependentUpon>frmDeleteItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Item\frmDeleteItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Item\frmViewItem.Designer.vb">
+      <DependentUpon>frmViewItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Item\frmViewItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Item\frmEditItem.Designer.vb">
+      <DependentUpon>frmEditItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Item\frmEditItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Item\frmAddItem.Designer.vb">
+      <DependentUpon>frmAddItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Item\frmAddItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module, Class, Structure\AeroFormShadow.vb" />
+    <Compile Include="Module, Class, Structure\ColorMath.vb" />
+    <Compile Include="Module, Class, Structure\Easing.vb" />
+    <Compile Include="Module, Class, Structure\Encryption.vb" />
+    <Compile Include="Form\Home\Dashboard\ctrlDashboard.Designer.vb">
+      <DependentUpon>ctrlDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Dashboard\ctrlDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\frmHome.Designer.vb">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\frmHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Item\ctrlItem.Designer.vb">
+      <DependentUpon>ctrlItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Item\ctrlItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Home\Item\ctrlItemCard.Designer.vb">
+      <DependentUpon>ctrlItemCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Item\ctrlItemCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Login\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Login\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module, Class, Structure\AppHelper.vb" />
+    <Compile Include="Module, Class, Structure\WindowsMessage.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Form\Home\Dashboard\ctrlDashboardCard.designer.vb">
+      <DependentUpon>ctrlDashboardCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Home\Dashboard\ctrlDashboardCard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ctrlColorPallet.Designer.vb">
+      <DependentUpon>ctrlColorPallet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ctrlColorPallet.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ctrlLoadingScreen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ctrlGradient.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\ctrlPaddedTextBox.Designer.vb">
+      <DependentUpon>ctrlPaddedTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ctrlPaddedTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ctrlTabControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\ctrlTitleBar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dummy\Dummy3.resx">
+      <DependentUpon>Dummy3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dummy\Dummy4.resx">
+      <DependentUpon>Dummy4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Permission\frmDeletePermission.resx">
+      <DependentUpon>frmDeletePermission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Permission\frmEditPermission.resx">
+      <DependentUpon>frmEditPermission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Permission\frmSelectPermission.resx">
+      <DependentUpon>frmSelectPermission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Permission\ctrlPermission.resx">
+      <DependentUpon>ctrlPermission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Permission\ctrlPermissionCard.resx">
+      <DependentUpon>ctrlPermissionCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Permission\frmAddPermission.resx">
+      <DependentUpon>frmAddPermission.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Activity Log\ctrlActivityLog.resx">
+      <DependentUpon>ctrlActivityLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Activity Log\ctrlActivityLogCard.resx">
+      <DependentUpon>ctrlActivityLogCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\User\frmEditUser.resx">
+      <DependentUpon>frmEditUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\User\frmAddUser.resx">
+      <DependentUpon>frmAddUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\User\ctrlUserCard.resx">
+      <DependentUpon>ctrlUserCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\User\ctrlUser.resx">
+      <DependentUpon>ctrlUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Customer\ctrlCustomer.resx">
+      <DependentUpon>ctrlCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Customer\ctrlCustomerCard.resx">
+      <DependentUpon>ctrlCustomerCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Customer\Offense\frmEditCustomerOffense.resx">
+      <DependentUpon>frmEditCustomerOffense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Customer\Offense\frmAddCustomerOffense.resx">
+      <DependentUpon>frmAddCustomerOffense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Customer\frmEditCustomer.resx">
+      <DependentUpon>frmEditCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Customer\frmAddCustomer.resx">
+      <DependentUpon>frmAddCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Customer\frmDeleteCustomer.resx">
+      <DependentUpon>frmDeleteCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Customer\Offense\frmViewCustomer.resx">
+      <DependentUpon>frmViewCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Reservation\frmDeleteReservation.resx">
+      <DependentUpon>frmDeleteReservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Reservation\frmEditReservation.resx">
+      <DependentUpon>frmEditReservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Reservation\frmAddReservation.resx">
+      <DependentUpon>frmAddReservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Reservation\ctrlReservation.resx">
+      <DependentUpon>ctrlReservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Station\frmEditStation.resx">
+      <DependentUpon>frmEditStation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Station\ctrlStation.resx">
+      <DependentUpon>ctrlStation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Borrow\ctrlBorrow.resx">
+      <DependentUpon>ctrlBorrow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Borrow\frmEditBorrow.resx">
+      <DependentUpon>frmEditBorrow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Consume\frmEditConsume.resx">
+      <DependentUpon>frmEditConsume.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Customer\frmSelectCustomer.resx">
+      <DependentUpon>frmSelectCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Inventory\frmSelectInventory.resx">
+      <DependentUpon>frmSelectInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Consume\ctrlConsume.resx">
+      <DependentUpon>ctrlConsume.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Inventory\frmUseInventory.resx">
+      <DependentUpon>frmUseInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dummy\Dummy1.resx">
+      <DependentUpon>Dummy1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dummy\Dummy2.resx">
+      <DependentUpon>Dummy2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Dashboard\ctrlDashboard.resx">
+      <DependentUpon>ctrlDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\frmHome.resx">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Item\ctrlItem.resx">
+      <DependentUpon>ctrlItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Item\ctrlItemCard.resx">
+      <DependentUpon>ctrlItemCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Inventory\ctrlInventory.resx">
+      <DependentUpon>ctrlInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Inventory\frmDeleteInventory.resx">
+      <DependentUpon>frmDeleteInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Inventory\frmEditInventory.resx">
+      <DependentUpon>frmEditInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Inventory\frmAddInventory.resx">
+      <DependentUpon>frmAddInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\User\frmEditPassword.resx">
+      <DependentUpon>frmEditPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Login\frmConfirmPassword.resx">
+      <DependentUpon>frmConfirmPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Item\frmDeleteItem.resx">
+      <DependentUpon>frmDeleteItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Item\frmEditItem.resx">
+      <DependentUpon>frmEditItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Item\frmAddItem.resx">
+      <DependentUpon>frmAddItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Item\frmViewItem.resx">
+      <DependentUpon>frmViewItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Login\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Home\Dashboard\ctrlDashboardCard.resx">
+      <DependentUpon>ctrlDashboardCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\ctrlColorPallet.resx">
+      <DependentUpon>ctrlColorPallet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\ctrlLoadingScreen.resx">
+      <DependentUpon>ctrlLoadingScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\ctrlPaddedTextBox.resx">
+      <DependentUpon>ctrlPaddedTextBox.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoTransparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COLM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormMaximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormMinimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alert.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\DeleteRecord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditRecord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormRestore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fulfill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddRecord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="My Project\Todo.txt" />
+    <Content Include="Notes.txt" />
+    <Content Include="SQL\- Constraints\Borrow.sql" />
+    <Content Include="SQL\- Constraints\Consume.sql" />
+    <Content Include="SQL\- Constraints\Inventory.sql" />
+    <Content Include="SQL\- Constraints\Item.sql" />
+    <Content Include="SQL\- Constraints\Reservation.sql" />
+    <Content Include="SQL\- Constraints\Station.sql" />
+    <Content Include="SQL\~ Create Script\Read Me.txt" />
+    <Content Include="SQL\~ Create Script\Programmability\Dashboard.sql" />
+    <Content Include="SQL\~ Create Script\Programmability\Duplicate.sql" />
+    <Content Include="SQL\~ Create Script\Programmability\Function\fnGetItemType.sql" />
+    <Content Include="SQL\~ Create Script\Programmability\Function\fnGetLen.sql" />
+    <Content Include="SQL\~ Create Script\Programmability\Function\fnIsKeyPermitted.sql" />
+    <Content Include="SQL\~ Create Script\Programmability\Function\fnIsMultipleAssetQty.sql" />
+    <Content Include="SQL\~ Create Script\Programmability\Function\fnLogin.sql" />
+    <Content Include="SQL\- Programmability\Dashboard\fnAvailable.sql" />
+    <Content Include="SQL\- Programmability\Dashboard\fnBorrowed.sql" />
+    <Content Include="SQL\- Programmability\Dashboard\fnConsumed.sql" />
+    <Content Include="SQL\- Programmability\Dashboard\fnDamaged.sql" />
+    <Content Include="SQL\- Programmability\Dashboard\fnGood.sql" />
+    <Content Include="SQL\- Programmability\Dashboard\fnMaintenance.sql" />
+    <Content Include="SQL\- Programmability\Dashboard\fnReplacement.sql" />
+    <Content Include="SQL\- Programmability\Dashboard\fnReserved.sql" />
+    <Content Include="SQL\- Programmability\Dashboard\fnStationed.sql" />
+    <Content Include="SQL\- Programmability\Dashboard\fnTotal.sql" />
+    <Content Include="SQL\- Programmability\Duplicate\fnIsCustomerDuplicate.sql" />
+    <Content Include="SQL\- Programmability\Duplicate\fnIsInventoryDuplicate.sql" />
+    <Content Include="SQL\- Programmability\Duplicate\fnIsItemDuplicate.sql" />
+    <Content Include="SQL\- Programmability\Duplicate\fnIsReservationDuplicate.sql" />
+    <Content Include="SQL\- Programmability\Function\fnGetItemType.sql" />
+    <Content Include="SQL\- Programmability\Function\fnGetLen.sql" />
+    <Content Include="SQL\- Programmability\Function\fnIsKeyPermitted.sql" />
+    <Content Include="SQL\- Programmability\Function\fnIsMultipleAssetQty.sql" />
+    <Content Include="SQL\- Programmability\Function\fnLogin.sql" />
+    <Content Include="SQL\- Triggers\trActivityLog.sql" />
+    <Content Include="SQL\- Triggers\trBorrow.sql" />
+    <Content Include="SQL\- Triggers\trConsume.sql" />
+    <Content Include="SQL\- Triggers\trCustomer.sql" />
+    <Content Include="SQL\- Triggers\trInventory.sql" />
+    <Content Include="SQL\- Triggers\trItem.sql" />
+    <Content Include="SQL\- Triggers\trPermission.sql" />
+    <Content Include="SQL\- Triggers\trSession.sql" />
+    <Content Include="SQL\- Triggers\trStation.sql" />
+    <Content Include="SQL\- View\vwDashboard.sql" />
+    <Content Include="SQL\- View\vwActivityLog.sql" />
+    <Content Include="SQL\- View\vwBorrow.sql" />
+    <Content Include="SQL\- View\vwConsume.sql" />
+    <Content Include="SQL\- View\vwCustomerOffense.sql" />
+    <Content Include="SQL\- View\vwCustomer.sql" />
+    <Content Include="SQL\- View\vwInventory.sql" />
+    <Content Include="SQL\- View\vwItem.sql" />
+    <Content Include="SQL\- View\vwPermission.sql" />
+    <Content Include="SQL\- View\vwReservation.sql" />
+    <Content Include="SQL\- View\vwStation.sql" />
+    <Content Include="SQL\- View\vwUser.sql" />
+    <Content Include="SQL\Activity Log\spInsertActivityLog.sql" />
+    <Content Include="SQL\Borrow\spInsertBorrow.sql" />
+    <Content Include="SQL\Borrow\spUpdateBorrow.sql" />
+    <Content Include="SQL\Consume\spInsertConsume.sql" />
+    <Content Include="SQL\Consume\spUpdateConsume.sql" />
+    <Content Include="SQL\Customer Offense\spInsertCustomerOffense.sql" />
+    <Content Include="SQL\Customer Offense\spUpdateCustomerOffense.sql" />
+    <Content Include="SQL\Customer\spDeleteCustomer.sql" />
+    <Content Include="SQL\Customer\spInsertCustomer.sql" />
+    <Content Include="SQL\Customer\spUpdateCustomer.sql" />
+    <Content Include="SQL\Inventory\spDeleteInventory.sql" />
+    <Content Include="SQL\Inventory\spInsertInventory.sql" />
+    <Content Include="SQL\Inventory\spUpdateInventory.sql" />
+    <Content Include="SQL\Item\spDeleteItem.sql" />
+    <Content Include="SQL\Item\spInsertItem.sql" />
+    <Content Include="SQL\Item\spUpdateItem.sql" />
+    <Content Include="SQL\Permission\spDeletePermission.sql" />
+    <Content Include="SQL\Permission\spInsertPermission.sql" />
+    <Content Include="SQL\Permission\spUpdatePermission.sql" />
+    <Content Include="SQL\Reservation\spDeleteReservation.sql" />
+    <Content Include="SQL\Reservation\spInsertReservation.sql" />
+    <Content Include="SQL\Reservation\spUpdateReservation.sql" />
+    <Content Include="SQL\Station\spInsertStation.sql" />
+    <Content Include="SQL\Station\spUpdateStation.sql" />
+    <Content Include="SQL\User\spInsertUser.sql" />
+    <Content Include="SQL\User\spLogin.sql" />
+    <Content Include="SQL\User\spUpdateUser.sql" />
+    <Content Include="SQL\~ Create Script\Stored Procedure.sql" />
+    <Content Include="SQL\~ Create Script\Trigger.sql" />
+    <Content Include="SQL\~ Create Script\View.sql" />
+    <Content Include="SQL\~ Create Script\Table.sql" />
+    <Content Include="Todo.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

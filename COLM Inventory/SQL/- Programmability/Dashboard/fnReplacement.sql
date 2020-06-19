@@ -1,0 +1,14 @@
+USE dbColmInventory
+GO
+
+SET NOCOUNT ON
+GO
+
+ALTER FUNCTION fnReplacement(@ItemID INTEGER) RETURNS INTEGER
+AS
+BEGIN
+
+    RETURN (SELECT ISNULL(SUM(I.Replacement), 0) FROM tblInventory AS I WHERE I.ItemID = @ItemID)
+		
+END
+GO

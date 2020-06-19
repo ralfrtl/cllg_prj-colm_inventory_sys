@@ -1,0 +1,18 @@
+USE dbColmInventory
+GO
+
+SET NOCOUNT ON
+GO
+
+ALTER TRIGGER trUpdateItem
+	ON tblItem
+	AFTER UPDATE
+AS 
+BEGIN
+	
+    IF (SELECT ItemType FROM DELETED) <> (SELECT ItemType FROM INSERTED) BEGIN
+	    DELETE FROM tblInventory WHERE tblInventory.ItemID = (SELECT ItemID FROM DELETED)
+	END
+
+END
+GO

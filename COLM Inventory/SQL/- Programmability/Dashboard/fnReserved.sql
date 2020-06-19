@@ -1,0 +1,14 @@
+USE dbColmInventory
+GO
+
+SET NOCOUNT ON
+GO
+
+ALTER FUNCTION fnReserved(@ItemID INTEGER) RETURNS INTEGER
+AS
+BEGIN
+
+	RETURN (SELECT ISNULL(SUM(R.QuantityNeeded), 0) FROM tblReservation AS R WHERE R.ItemID = @ItemID AND GETDATE() <= DATEADD(MINUTE, 15, R.DateNeeded))
+	
+END
+GO

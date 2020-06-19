@@ -1,0 +1,12 @@
+﻿
+SETPS:
+	- Create a database named 'dbColmInventory'
+	- Execute the following files under '~ Create Script'
+		- Table
+		- Programmability
+			- Function
+			- Dashboard
+			- Duplicate
+		- Triggers
+		- View
+		- Stored Procedure

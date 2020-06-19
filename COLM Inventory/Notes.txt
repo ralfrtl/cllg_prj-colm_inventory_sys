@@ -1,0 +1,41 @@
+﻿
+COLOR SCHEME:
+	
+	Green 0			- 0 , 128, 0 / Green
+	Green 1			- 25, 140, 25
+	Green 2			- 65, 160, 65
+
+	Light Green 0	- 255, 255, 255 / White
+	Light Green 1	- 230, 245, 230
+	Light Green 2	- 190, 225, 190
+
+	Red 0			- 230, 50, 50
+	Red 1			- 230, 70, 70
+	Red 2			- 235, 100, 100
+
+	Light Red 0		- 255, 255, 255 / White
+	Light Red 1		- 255, 240, 240
+	Light Red 2		- 250, 205, 205
+
+	Primary			- 0, 64, 0
+	Accent			- 0, 128, 0 / Green 0
+	Error			- 230, 50, 50 / Red 0
+	BackColor		- 255, 255, 255 / White
+	Contrast 1		- 225, 225, 225
+	Contrast 2		- 105, 105, 105 / DimGray
+	Yellow			- 250, 230, 50
+	Blue			- 30, 144, 255
+
+	(FC = ForeColor)
+	FC on Primary			- 255, 255, 255 / White
+	FC on Accent			- 255, 255, 255 / White
+	FC on Error				- 255, 255, 255 / White
+	FC on BackColor			- 0, 0, 0 / Black
+	FC on Contrast 1		- 0, 0, 0 / Black
+	FC on Contrast 2		- 255, 255, 255 / White
+	FC on Yellow			- 255, 255, 255 / White
+	FC on Blue				- 255, 255, 255 / White
+	Error FC on BackColor	- 255, 0, 0 / Red
+
+
+	~ If you're creating a new color scheme, use the ctrlColorPallet to calculate new colors; The rounded value of 4th and 6th are the ones that I used.

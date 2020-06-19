@@ -1,0 +1,14 @@
+USE dbColmInventory
+GO
+
+SET NOCOUNT ON
+GO
+
+ALTER FUNCTION fnDamaged(@ItemID INTEGER) RETURNS INTEGER
+AS
+BEGIN
+
+    RETURN (SELECT ISNULL(SUM(I.Damaged), 0) FROM tblInventory AS I WHERE I.ItemID = @ItemID)
+	
+END
+GO
