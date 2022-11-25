@@ -1,0 +1,85 @@
+﻿
+SEARCH:
+	- idunno
+
+TODO:
+	- idunno
+
+BUGS:
+    - idunno
+
+CODE:
+* Item
+//  - list
+//  - View
+//  - Add
+//  - Edit
+//  - Delete
+
+* Inventory
+//	- List
+//  - Add
+//  - Edit
+//  - Delete
+//	- Select
+//	- Use
+
+* Consume
+//	- List
+//	- Edit
+
+* Borrow
+//	- List
+//	- Edit
+
+* Station
+//	- List
+//	- Edit
+
+* Reservation
+//	- List
+//	- Add
+//	- Edit
+//	- Delete
+
+* Customer
+//	- List
+//	- Add
+//	- Edit
+//	- Delete
+//	- Select
+//	- Offense
+	//	- List
+	//	- Add
+	//	- Edit
+
+* User
+//	- List
+//	- Add
+//	- Edit Info
+//	- Edit Password
+
+* Permission
+//	- List
+//	- Add
+//	- Edit
+//	- Delete
+//	- Select
+
+* Activity Log
+//	- List
+	
+* Dashboard
+//	- List
+
+* Print
+	- Item
+	- Inventory
+	- Reservation
+	- Consume
+	- Borrow
+	- Station
+	- User
+	- Customer
+	- Log
+	
